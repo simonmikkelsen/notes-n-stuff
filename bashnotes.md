@@ -6,16 +6,17 @@ SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 https://askubuntu.com/questions/135214/pipable-command-to-print-in-color#135225
 
 ## Arg parsing v. 1
-```for args in "$@"
+```
+for args in "$@"
 do
 case $args in
     -e=*|--example=*)
-    VAR1="${args#*=}"
-    shift # past argument=value
+        VAR1="${args#*=}"
+        shift # past argument=value
     ;;
     -t=*|--test=*)
-    TEST="${args#*=}"
-    shift # past argument=value
+        TEST="${args#*=}"
+        shift # past argument=value
     ;;
     -h|--help)
         help
