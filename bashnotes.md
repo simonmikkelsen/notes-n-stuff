@@ -1,9 +1,11 @@
 # Bash notes
 ## Scriptdir
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+`SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"`
 
 ## Colorize in Bash
 https://askubuntu.com/questions/135214/pipable-command-to-print-in-color#135225
+
+See also `tput` and https://wiki.archlinux.org/index.php/Bash/Prompt_customization#Common_capabilities
 
 ## Arg parsing v. 1
 ```
